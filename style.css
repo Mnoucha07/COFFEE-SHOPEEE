@@ -1,0 +1,447 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: url(images/coffe.jpg) no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER  */
+.headerContainer {
+  background-color: #111111;
+}
+.header {
+  height: 90px;
+  background-color: #f6f6f6;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 10px 100px;
+  margin: auto;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 30px;
+}
+
+.headerLinks {
+  width: 50%;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.headerLinks a {
+  text-decoration: none;
+  color: #ffcb74;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.headerLinks a:hover {
+  background-color: #111111;
+}
+
+.logo img {
+  width: 150px;
+  border-radius: 50px 50px 0px 0px;
+}
+.landingPageContainer {
+  background: url(images/redcc.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px 5px;
+  display: flex;
+  padding: 40px;
+  margin: auto;
+  justify-content: center;
+  max-width: 1000px;
+}
+.landingPage {
+  display: flex;
+  padding: 100px 0;
+  color: #000000;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.landingPage .slogan {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.landingPage .welcome {
+  font-size: x-large;
+  height: 10px;
+}
+
+.btn {
+  border-radius: 50px 20px;
+  height: 52px;
+  border: none;
+  font-weight: 600;
+  font-size: medium;
+  padding: 0 20px;
+  background-color: #ffcb74;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #111111;
+  cursor: pointer;
+}
+.btn-Our {
+  border-radius: 50px 20px;
+  height: 52px;
+  border: none;
+  font-weight: 600;
+  font-size: medium;
+  padding: 20px 30px;
+  background-color: #ffcb74;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-Our:hover {
+  background-color: #111111;
+  cursor: pointer;
+}
+.searchBar {
+  position: relative;
+  margin-top: 100px;
+}
+
+.searchBar input {
+  border-radius: 50px 20px;
+  border: none;
+  outline: none;
+  width: 40%;
+  height: 50px;
+  font-size: large;
+  padding-left: 20px;
+  background-color: #dad2d2;
+}
+
+.searchBar input::placeholder {
+  font-size: medium;
+}
+
+.imageContainer {
+  flex: 4;
+}
+
+.trendingContainer {
+  margin: auto;
+  max-width: 1300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.trendingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-left: 25px;
+}
+
+.trendingCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trendingCard .card {
+  position: relative;
+}
+
+.trendingCard .card img {
+  border-radius: 30px 10px 0px 0px;
+  width: 170px;
+}
+
+.trendingCard .card .cardInfo {
+  position: absolute;
+  top: 200px;
+  width: 170px;
+  background-color: #ffffff;
+  border-radius: 0 0 30px 10px;
+  padding-top: 10px;
+  display: flex;
+
+  align-items: center;
+}
+
+.trendingCard .card .cardName {
+  padding: 10px 20px;
+}
+
+.trendingCard .cardName a {
+  margin-top: 0;
+}
+
+.trendingCard .cardName p {
+  color: gray;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.trending {
+  padding-left: 50px;
+  color: #ffcb74;
+}
+.card {
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.headerLink a {
+  text-decoration: none;
+  color: #000000;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #dad2d2;
+  height: 400px;
+  padding: 20px;
+  width: 200px;
+  max-width: 400px;
+  border-radius: 30px 10px 30px 10px;
+  text-align: center;
+  position: relative;
+}
+.modal-content :hover {
+  transform: scale(1.05);
+}
+
+#modalImage {
+  width: 100%;
+  max-width: 300px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 30px 10px 30px 10px;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.formContainer {
+  display: flex;
+  padding: 40px;
+  margin: auto;
+  justify-content: center;
+  max-width: 1300px;
+}
+
+.formContainer form {
+  background-color: #634a1caf;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 400px;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 60px 15px;
+  height: 450px;
+}
+
+.formContainer form input,
+textarea {
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: large;
+  font-family: "Poppins";
+}
+
+.formContainer input {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.formContainer textarea {
+  border-radius: 20px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.footerContainer {
+  background-color: #f6f6f6;
+  height: 100px;
+  border-radius: 50px 50px 0 0;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  color: #f7a61a;
+  font-weight: 500;
+  font-size: larger;
+}
+
+/* MEDIA QUERIES FOR MOBILE DEVICES */
+@media (max-width: 926px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+  }
+
+  .landingPageContainer {
+    padding: 20px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .landingPage {
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .landingPage .slogan {
+    font-size: 28px;
+  }
+
+  .searchBar input {
+    width: 90%;
+  }
+  .trending {
+    padding-left: 30px;
+  }
+  .trendingHeader {
+    padding-left: 15px;
+  }
+
+  .trendingCard {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    justify-content: space-between;
+  }
+
+  .card {
+    min-width: 180px;
+    height: auto;
+    padding-bottom: 70px;
+    flex-shrink: 0;
+    scroll-snap-type: start;
+    display: flex;
+  }
+
+  .formContainer {
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin: auto;
+  }
+
+  .formContainer form {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+  }
+  .formContainer form textarea {
+    width: 100%;
+    max-width: 330px;
+
+    height: 200px;
+  }
+
+  .footer {
+    font-size: 10px;
+    padding: 10px;
+    display: flexbox;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1026px) {
+  .trending {
+    padding-left: 30px;
+  }
+  .trendingHeader {
+    padding-left: 15px;
+  }
+
+  .trendingCard {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .card {
+    min-width: 180px;
+    height: auto;
+    padding-bottom: 70px;
+    flex-shrink: 0;
+    scroll-snap-type: start;
+  }
+}

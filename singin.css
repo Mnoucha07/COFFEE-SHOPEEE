@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: url(images/palce.jpg) no-repeat;
+  background-position: center;
+  
+}
+
+.headerContainer {
+  background: local;
+}
+.header {
+  height: 90px;
+  background-color: #f6f6f6;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 10px 100px;
+  margin: auto;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 30px;
+}
+
+.headerLinks {
+  width: 15%;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.logo img {
+  width: 150px;
+  border-radius: 50px 50px 0px 0px;
+}
+.btn {
+  border-radius: 50px 20px;
+  height: 52px;
+  border: none;
+  font-weight: 600;
+  font-size: medium;
+  padding: 0 20px;
+  background-color: #ffcb74;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #111111;
+  cursor: pointer;
+}
+.formContainer {
+  display: flex;
+  padding: 40px;
+  margin: auto;
+  justify-content: center;
+  max-width: 1300px;
+}
+
+.formContainer form {
+  background-color: #f6f6f694;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 400px;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 60px 15px;
+  height: 450px;
+}
+.formContainer form input {
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: large;
+  font-family: "Poppins";
+  height: 50px;
+  border-radius: 50px;
+  border-radius: 20px;
+  padding-top: 10px;
+  resize: none;
+}
+.formContainerW {
+  justify-content: center;
+  padding: 0px 10px 10px 115px;
+}
+@media (max-width: 768px) {
+    html, body {
+  height: 100%;
+  width: 100%;
+}
+
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .formContainer {
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin: auto;
+  }
+
+  .formContainer form {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+  }
+  .formContainerW {
+    justify-content: center;
+    padding: 0px 0px;
+  }
+  
+}
